@@ -15,13 +15,4 @@ function checkPassword() {
     alert("All details are compulsory. Please fill all details.");
     message.textContent = "";
   }
-}
-
-var uploadField = document.getElementById("myfile");
-
-uploadField.onchange = function() {
-  if (this.files[0].size > 102400) {
-    alert("File is too big! File size should be 100kb.");
-    this.value = "";
-  }
 };
